@@ -19,7 +19,7 @@ body {
 
 button {
     display: block;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
     border: none;
     background-color: #ff0000;
