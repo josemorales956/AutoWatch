@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Service Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vehicle Service Portal</h1>
+
+        <!-- Main Menu -->
+        <div class="section" id="mainMenu">
+            <button onclick="fetchDiagnosticData()">View Diagnostic Data</button>
+            <button onclick="fetchRepairHistory()">View Repair History</button>
+            <button onclick="fetchCostEstimates()">Get Cost Estimates</button>
+            <button onclick="showScheduleAppointment()">Schedule Appointment</button>
+        </div>
+
+        <!-- Diagnostic Data Section -->
+        <div class="section" id="diagnosticData" style="display: none;">
+            <h2>Diagnostic Data</h2>
+            <pre id="diagnosticDataContent"></pre>
+            <button onclick="showDiagnosticDetails()">More Diagnostic Details</button>
+            <button onclick="showMainMenu()">Back to Main Menu</button>
+        </div>
+
+        <!-- Diagnostic Details Section -->
+        <div class="section" id="diagnosticDetails" style="display: none;">
+            <h2>Diagnostic Details</h2>
+            <div>
+                <button onclick="showVehicleDiagnostics()">Vehicle Diagnostics</button>
+                <button onclick="showDiagnose()">Diagnose</button>
+                <button onclick="reportAnError()">Report an Error</button>
+            </div>
+            <div id="diagnosticContent"></div>
+            <button onclick="showDiagnosticData()">Back to Diagnostic Data</button>
+        </div>
+
+        <!-- Repair History Section -->
+        <div class="section" id="repairHistory" style="display: none;">
+            <h2>Repair History</h2>
+            <ul id="repairHistoryContent"></ul>
+            <button onclick="showMainMenu()">Back to Main Menu</button>
+        </div>
+
+        <!-- Cost Estimates Section -->
+        <div class="section" id="costEstimates" style="display: none;">
+            <h2>Repair Cost Estimates</h2>
+            <ul id="costEstimatesContent"></ul>
+            <button onclick="showMainMenu()">Back to Main Menu</button>
+        </div>
+
+        <!-- Schedule Appointment Section -->
+        <div class="section" id="scheduleAppointment" style="display: none;">
+            <h2>Schedule Appointment</h2>
+            <form id="appointmentForm" onsubmit="scheduleAppointment(event)">
+                <input type="date" id="appointmentDate" required />
+                <input type="time" id="appointmentTime" required />
+                <button type="submit">Schedule</button>
+            </form>
+            <button onclick="showMainMenu()">Back to Main Menu</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
