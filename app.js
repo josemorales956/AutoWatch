@@ -27,3 +27,26 @@ function showDiagnose() {
     // Logic for diagnose...
     document.getElementById('diagnosticContent').textContent = 'Diagnose Content...';
 }
+
+function showRepairHistoryDetails() {
+    showSection('repairHistoryDetails');
+}
+
+function showRepairInstances() {
+    document.getElementById('repairHistoryContent').textContent = 'Repair Instances Content...';
+    // Add logic to fetch and display repair instances
+}
+
+function showWarrantyCheck() {
+    document.getElementById('repairHistoryContent').textContent = 'Warranty Check Content...';
+    // Add logic for warranty check functionality
+}
+
+function showVehicleHistory() {
+    document.getElementById('repairHistoryContent').textContent = 'Vehicle History Content...';
+    // Add logic for displaying vehicle history
+}
+
+function showRepairHistory() {
+    showSection('repairHistory');
+}
