@@ -60,3 +60,24 @@ li {
     height: auto;
     margin-right: 10px; /* Adds space between the logo and the title */
 }
+
+.signin-icon {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+    margin-left: auto; /* Push to the right */
+    margin-right: 20px; /* Space from the right edge */
+    text-decoration: none; /* Optional: Remove underline from the link */
+}
+
+.signin-icon img {
+    width: 30px; /* Adjust as needed */
+    height: auto;
+}
+
+.signin-icon span {
+    font-size: 0.8em; /* Adjust text size as needed */
+    color: black; /* Text color */
+    margin-top: 5px; /* Space between image and text */
+}
+
