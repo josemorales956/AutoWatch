@@ -100,3 +100,27 @@ li {
     margin-top: 5px; /* Space between image and text */
 }
 
+.navbar {
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #000; /* Change as needed */
+    text-decoration: none;
+}
+
+.nav-link img {
+    width: 20px; /* Adjust as needed */
+    height: auto;
+    margin-right: 5px;
+}
