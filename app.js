@@ -32,25 +32,62 @@ function showDiagnose() {
     document.getElementById('diagnosticContent').textContent = 'Diagnose Content...';
 }
 
-function showRepairHistoryDetails() {
-    showSection('repairHistoryDetails');
+// ... existing functions ...
+
+function fetchRepairHistory() {
+    // Hide all sections and show the Repair History Details section
+    hideAllSections();
+    document.getElementById('repairHistoryDetails').style.display = 'block';
+    // You can also add logic here to dynamically load or fetch the repair history content
 }
 
 function showRepairInstances() {
-    document.getElementById('repairHistoryContent').textContent = 'Repair Instances Content...';
-    // Add logic to fetch and display repair instances
+    document.getElementById('repairHistoryContent').textContent = 'Content for Each Repair Instance...';
+    // Add logic to display each repair instance
 }
 
 function showWarrantyCheck() {
-    document.getElementById('repairHistoryContent').textContent = 'Warranty Check Content...';
-    // Add logic for warranty check functionality
+    document.getElementById('repairHistoryContent').textContent = 'Content for Warranty Check...';
+    // Add logic to display warranty check information
 }
 
 function showVehicleHistory() {
-    document.getElementById('repairHistoryContent').textContent = 'Vehicle History Content...';
-    // Add logic for displaying vehicle history
+    document.getElementById('repairHistoryContent').textContent = 'Content for Vehicle History...';
+    // Add logic to display vehicle history
 }
 
-function showRepairHistory() {
-    showSection('repairHistory');
+function hideAllSections() {
+    // Logic to hide all content sections
+    var sections = document.getElementsByClassName('section');
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].style.display = 'none';
+    }
 }
+
+function fetchCostEstimates() {
+    // Logic to fetch and display basic cost estimates
+    hideAllSections();
+    document.getElementById('costEstimates').style.display = 'block';
+}
+
+function showCostEstimateDetails() {
+    hideAllSections();
+    document.getElementById('costEstimateDetails').style.display = 'block';
+    // Logic to dynamically load or fetch detailed cost estimate content
+}
+
+function getQuote() {
+    document.getElementById('estimateDetailsContent').textContent = 'Quote Content...';
+    // Add logic to get and display a quote
+}
+
+function showPartsAndLabor() {
+    document.getElementById('estimateDetailsContent').textContent = 'Parts and Labor Content...';
+    // Add logic to display parts and labor information
+}
+
+function showCostEstimates() {
+    hideAllSections();
+    document.getElementById('costEstimates').style.display = 'block';
+}
+
