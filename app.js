@@ -13,6 +13,10 @@ function fetchDiagnosticData() {
     showSection('diagnosticData');
 }
 
+function showDiagnosticData() {
+    showSection('diagnosticData');
+}
+
 function showDiagnosticDetails() {
     // Show diagnostic details section...
     showSection('diagnosticDetails');
