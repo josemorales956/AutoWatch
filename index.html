@@ -62,17 +62,38 @@
             <button onclick="showMainMenu()">Back to Main Menu</button>
         </div>
 
+         <!-- Add this new section in your HTML file where appropriate -->
+    <div class="section" id="repairHistoryDetails" style="display: none;">
+        <h2>Repair History Details</h2>
+        <button onclick="showRepairInstances()">Each Repair Instance</button>
+        <button onclick="showWarrantyCheck()">Warranty Check</button>
+        <button onclick="showVehicleHistory()">Vehicle History</button>
+        <div id="repairHistoryContent"></div>
+        <button onclick="showMainMenu()">Back to Main Menu</button>
+    </div>
+
         <!-- Cost Estimates Section -->
+
         <div class="section" id="costEstimates" style="display: none;">
             <h2>Repair Cost Estimates</h2>
             <ul id="costEstimatesContent"></ul>
+            <button onclick="showCostEstimateDetails()">Get Detailed Estimates</button>
             <button onclick="showMainMenu()">Back to Main Menu</button>
+        </div>
+      
+         <!-- Cost Estimates details Section -->
+        <div class="section" id="costEstimateDetails" style="display: none;">
+            <h2>Cost Estimate Details</h2>
+            <button onclick="getQuote()">Get a Quote</button>
+            <button onclick="showPartsAndLabor()">Parts and Labor</button>
+            <div id="estimateDetailsContent"></div>
+            <button onclick="showCostEstimates()">Back to Cost Estimates</button>
         </div>
 
         <!-- Schedule Appointment Section -->
         <div class="section" id="scheduleAppointment" style="display: none;">
             <h2>Schedule Appointment</h2>
-            <form id="appointmentForm" onsubmit="scheduleAppointment(event)">
+            < id="appointmentForm" onsubmit="scheduleAppointment(event)">
                 <input type="date" id="appointmentDate" required />
                 <input type="time" id="appointmentTime" required />
                 <button type="submit">Schedule</button>
